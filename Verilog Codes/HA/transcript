@@ -1,0 +1,24 @@
+# Loading project half_adder
+# Compile of half_adder.v was successful.
+# Compile of half_adder_tb.v was successful.
+# 2 compiles, 0 failed with no errors.
+vsim work.half_adder_tb
+# vsim work.half_adder_tb 
+# Start time: 10:27:23 on Jun 07,2022
+# Loading work.half_adder_tb
+# Loading work.half_adder
+add wave -r /*
+add wave -position insertpoint sim:/half_adder_tb/*
+add wave -position insertpoint sim:/half_adder_tb/*
+add wave -position insertpoint sim:/half_adder_tb/dut/*
+run -all
+# input A=0  B=0 and output Sum=0  Carry=0 
+# input A=0  B=1 and output Sum=1  Carry=0 
+# input A=1  B=0 and output Sum=1  Carry=0 
+# input A=1  B=1 and output Sum=0  Carry=1 
+# ** Note: $finish    : /home/ppatil/Desktop/HA/half_adder_tb.v(32)
+#    Time: 200 ps  Iteration: 0  Instance: /half_adder_tb
+# 1
+# Break in Module half_adder_tb at /home/ppatil/Desktop/HA/half_adder_tb.v line 32
+# End time: 10:49:51 on Jun 07,2022, Elapsed time: 0:22:28
+# Errors: 0, Warnings: 6
